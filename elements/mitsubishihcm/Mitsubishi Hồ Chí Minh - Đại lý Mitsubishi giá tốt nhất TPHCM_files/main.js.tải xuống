@@ -1,0 +1,340 @@
+(function ($) {
+    "use strict";
+
+    jQuery(document).ready(function ($) {
+        $.fn.evenElements = function () {
+            var heights = [];
+
+            $(this).removeAttr("style").height('auto');
+
+            this.each(function () {
+                if ($(this).css('transition-duration')) {
+                    var transition_duration = (typeof transition_duration == "undefined" ? $(this).css('transition-duration') : transition_duration);
+                    $(this).css('transition-duration', '0s');
+                }
+
+                var height = $(this).height('auto').outerHeight();
+
+                heights.push(height);
+            });
+
+            var largest = Math.max.apply(Math, heights);
+
+            return this.each(function () {
+                $(this).height(largest);
+
+                $(this).css('transition-duration', transition_duration);
+            });
+        };
+
+        jQuery.fn.extend({
+            renameAttr: function (name, newName, removeData) {
+                var val;
+                return this.each(function () {
+                    val = jQuery.attr(this, name);
+                    jQuery.attr(this, newName, val);
+                    jQuery.removeAttr(this, name);
+                    // remove original data
+                    if (removeData !== false) {
+                        jQuery.removeData(this, name.replace('data-', ''));
+                    }
+                });
+            }
+        });
+
+        // empty paragraphs
+        $('p:empty').remove();
+
+        $(".portfolioFilter li a").click(function () {
+            $(".portfolioFilter li.active").removeClass("active");
+            $(this).parent().addClass('active');
+        });
+
+        $(document).on({
+            mouseenter: function () {
+                var elm = $('ul:first', this);
+                var off = elm.offset();
+
+                if (typeof off != "undefined") {
+                    var l = off.left;
+                    var w = elm.width();
+                    var docW = $("section.content").outerWidth(true);
+
+                    var isEntirelyVisible = (l + w <= docW);
+
+                    if (!isEntirelyVisible) {
+                        $(this).addClass('other_side');
+                    }
+                }
+            },
+
+            mouseleave: function () {
+                if ($(this).hasClass('other_side')) {
+                    $(this).removeClass('other_side');
+                }
+            }
+        }, ".dropdown li");
+
+        // featured service hover
+        if ($(".featured-service .featured").length) {
+            $('.featured-service .featured').on({
+                mouseenter: function () {
+                    var image = $(this).find('img');
+
+                    image.data('img', image.attr('src'));
+                    image.attr('src', image.data('hoverimg'));
+                },
+                mouseleave: function () {
+                    var image = $(this).find('img');
+
+                    image.attr('src', image.data('img'));
+                }
+            });
+        }
+
+        //$("header .toolbar ul li:visible:last").addClass("li_mobile_show");
+
+        // social likes
+        if ($('.social-likes.blog_social').length) {
+            $('.social-likes.blog_social').socialLikes({
+                zeroes: 'yes'
+            });
+        }
+
+        // fancy box
+        if ($(".fancybox").length) {
+            $("a.fancybox").fancybox();
+        }
+
+        // dropdown menu
+        if ($('.mobile_dropdown_menu .dropdown .dropdown').length) {
+            $('.mobile_dropdown_menu .dropdown .dropdown').each(function () {
+                var $self = $(this);
+                var handle = $self.children('[data-toggle="dropdown"]');
+
+                $(handle).on("click touchstart", function () {
+                    var submenu = $self.children('.dropdown-menu').eq(0);
+                    $(submenu).toggle();
+
+                    return false;
+                });
+            });
+        }
+
+        $(".flip").on({
+            mouseenter: function () {
+                if ($(this).css('border-top-color') != 'rgb(0, 255, 0)') {
+                    $(this).find('.card').addClass('flipped');
+                }
+            },
+            mouseleave: function () {
+                if ($(this).css('border-top-color') != 'rgb(0, 255, 0)') {
+                    $(this).find('.card').removeClass('flipped');
+                }
+            }
+        });
+
+        function flip_card_size() {
+            $(".flip").each(function (index, element) {
+                var frontHeight = $(this).find('.front img').outerHeight();
+                var frontWidth = $(this).find('.front img').outerWidth();
+
+                $(this).find('.flip, .back, .front, .card').height(frontHeight);
+                $(this).height(frontHeight);
+
+                $(this).find('.flip, .back, .front, .card').width(frontWidth);
+                $(this).width(frontWidth);
+            });
+        }
+
+        function flip_card_reset_size() {
+            $(".flip").each(function (index, element) {
+                $(this).find('.flip, .back, .front, .card').removeAttr("style").css("width", "auto");
+                $(this).removeAttr("style").css("width", "auto");
+            });
+        }
+
+        if ($(".back_to_top").length) {
+            $(".back_to_top").click(function () {
+                $("html, body").animate({scrollTop: 0}, "slow");
+                return false;
+            });
+
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+
+                if (height > 300) {
+                    $(".back_to_top").fadeIn();
+                } else {
+                    $(".back_to_top").fadeOut();
+                }
+            });
+        }
+
+        $(document).on("submit", "#automotive_login_form", function (e) {
+            e.preventDefault();
+
+            var nonce = $(this).find(".ajax_login").data("nonce");
+            var username = $(this).find(".username_input");
+            var password = $(this).find(".password_input");
+            var loading = $(this).find(".login_loading");
+            var empty_fields = false;
+
+            if (!username.val()) {
+                empty_fields = true;
+                username.css("border", "1px solid #F00");
+            } else {
+                username.removeAttr("style");
+            }
+
+            if (!password.val()) {
+                empty_fields = true;
+                password.css("border", "1px solid #F00");
+            } else {
+                password.removeAttr("style");
+            }
+
+            if (!empty_fields) {
+                loading.show();
+
+                jQuery.ajax({
+                    url: ajax_variables.ajaxurl,
+                    type: 'POST',
+                    data: {action: 'ajax_login', username: username.val(), password: password.val(), nonce: nonce},
+                    success: function (response) {
+                        if ("success" == response) {
+                            username.removeAttr("style");
+                            password.removeAttr("style");
+
+                            location.reload();
+                        } else {
+                            username.css("border", "1px solid #F00");
+                            password.css("border", "1px solid #F00");
+
+                            loading.hide();
+                        }
+                    }
+                });
+            }
+
+        });
+
+        $("*[data-toggle='popover']").popover({
+            html: true,
+            trigger: 'manual',
+            container: $(this).attr('id'),
+            content: function () {
+                var $return = '<div class="hover-hovercard"></div>';
+            }
+        }).on("mouseenter", function () {
+            var _this = this;
+            $(this).popover("show");
+            $(this).siblings(".popover").on("mouseleave", function () {
+                $(_this).popover('hide');
+            });
+        }).on("mouseleave", function () {
+            var _this = this;
+            setTimeout(function () {
+                if (!$(".popover:hover").length) {
+                    $(_this).popover("hide")
+                }
+            }, 100);
+        });
+
+        // if(typeof WOW == 'function'){
+        // var WOW =  WOW({
+        //      boxClass:     'wow',
+        //      animateClass: 'animated',
+        //      offset:       0,
+        //      mobile:       true,
+        //      live:         true
+        //  });
+        // WOW.init();
+        // }
+
+        // new WOW().init();
+
+        // if wow exists
+        if (typeof WOW == 'function') {
+            WOW = new WOW({
+                boxClass: 'auto_animate',
+                offset: 15
+            });
+
+            WOW.init();
+        }
+
+    });
+
+    woocommerce_slider_height();
+
+    $(document).on("mouseenter", ".woocommerce li.product_style_2", function () {
+        var height = $(this).height();
+        var div_height = $(this).find(".woocommerce-product-back-align").height();
+
+        $(this).find(".woocommerce-product-back-align").css("margin-top", ((height - div_height) / 2) - 10);
+    });
+
+    if ($(".woocommerce-message").length && !$(".woocommerce-message .wc-forward").is(":visible")) {
+        // setTimeout(function () {
+        //     $(".woocommerce-message").fadeOut("slow", function () {
+        //         $(this).remove();
+        //     });
+        // }, 5000);
+    }
+})(jQuery);
+
+function woocommerce_slider_height() {
+    var $ = jQuery;
+
+    if ($(".woocommerce-product-gallery").length) {
+        var height = $(".woocommerce-product-gallery .woocommerce-product-gallery__wrapper > .woocommerce-product-gallery__image").height();
+
+        $(".woocommerce-product-gallery .woocommerce-product-gallery__wrapper .thumbs").css('height', height);
+    }
+}
+
+(function ($, sr) {
+
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function (func, threshold, execAsap) {
+        var timeout;
+
+        return function debounced() {
+            var obj = this, args = arguments;
+
+            function delayed() {
+                if (!execAsap)
+                    func.apply(obj, args);
+                timeout = null;
+            };
+
+            if (timeout)
+                clearTimeout(timeout);
+            else if (execAsap)
+                func.apply(obj, args);
+
+            timeout = setTimeout(delayed, threshold || 100);
+        };
+    }
+    // smartresize
+    jQuery.fn[sr] = function (fn) {
+        return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+    };
+
+})(jQuery, 'smartresize');
+
+jQuery(window).smartresize(function ($) {
+    woocommerce_slider_height();
+});
+
+jQuery(window).on("load", function () {
+    if (jQuery(".woocommerce-menu-basket ul").length && jQuery.fn.mCustomScrollbar) {
+        jQuery(".woocommerce-menu-basket ul").mCustomScrollbar({
+            scrollInertia: 0,
+            mouseWheelPixels: 500,
+            scrollEasing: 'linear'
+        });
+    }
+});
