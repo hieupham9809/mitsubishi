@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://kiagovap.vn/#test-driver -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="./KIA Gò Vấp_files/bootstrap.min.css">
+   
+    <link type="text/css" rel="stylesheet" href="./KIA Gò Vấp_files/style.css">
+    <link type="text/css" rel="stylesheet" href="./KIA Gò Vấp_files/customize.css">
+    <link href="./KIA Gò Vấp_files/custom.css" rel="stylesheet">
+    <link href="./KIA Gò Vấp_files/thanhntp-fix.css" rel="stylesheet">
+    <script type="text/javascript" src="./KIA Gò Vấp_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./KIA Gò Vấp_files/bootstrap.min.js"></script>
+    
+
+
+
+<!-- Google schema  -->
+
+
+<section id="main-content">
+    
+
+
+    <!--end #test-driver-->
+    <style>
+    .schedule li p {
+        text-align: center;
+        color: black;
+        font-size: 10px;
+        margin: 2px;
+        float: left;
+        width: 13px;
+    }
+    .schedule li p div {    position: absolute;
+        background: #bc1121;
+        width: 15px;
+        height: 15px;
+        color: transparent;
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.93);
+    }
+    .schedule li p div:hover {
+        background: #fff;  border-color: #bc1121;
+    }
+    .schedule ul > li > a {
+        color: #222222;
+        width: 23px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        background: #FFFFFF;
+    }
+</style>
+<div id="test-driver">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 pull-right np">
+                <div id="register-form-test">
+                    <div class="title">Lái thử</div>
+                    <div class="wrapper">
+                        <div class="note">Quý khách vui lòng nhập thông tin dưới đây</div>
+                        <form action="http://kiagovap.vn/other/AddTestDriver" id="frmtestdriver">
+                            <input class="r-input-data" type="text" placeholder="Họ tên" id="name" name="name">
+                            <input class="r-input-data" type="tel" placeholder="Số điện thoại" id="phone" name="phone">
+                            <input class="r-input-data" type="email" placeholder="Email" id="email" name="email">
+                            <input class="r-input-data" type="text" placeholder="Địa chỉ" id="address" name="address">
+                            <input type="hidden" id="website" name="website" value="kiagovap.vn">
+                            <input type="hidden" id="showroomid" name="showroomid" value="99">
+
+                            <select class="r-input-data not-valid" name="province" id="provincetest" style="display: none">
+                                    <script>
+                                        $('<option>').
+  attr('value', curName).attr('selected', 'selected').
+  text(tinhthanh).
+  appendTo($('#provincetest'));
+                                    </script>
+
+
+                            </select>
+
+                            <select class="r-input-data not-valid" name="districts" id="districtstest" style="display: none">
+                                <option selected="" value="0">Chọn quận/huyện</option>
+
+                            </select>
+                            <select class="r-input-data" name="vehicles">
+                                <option selected="" value="0">Dòng xe</option>
+                                <option value="Sedona">Sedona </option>
+                                <option value="New Sorento">New Sorento </option>
+                                <option value="Rondo">Rondo </option>
+                                <option value="K3">Cerato </option>
+
+                            </select>
+                            <select class="r-input-data" name="months" id="months">
+                                <option selected="" value="-1">-Chọn tháng -</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+
+                            </select>
+                            <div style="clear: both"></div>
+                            <p>
+                                Mời quý khách lựa chọn thời điểm phù hợp để tham gia chương trình Test drive
+
+                            </p>
+                            <div class="schedule">
+                                <ul>
+                                    <li class="" date="1" style="display: block;"><p>T7</p> <a>1</a></li>
+                                    <li class="" date="2" style="display: block;"><p>CN</p><a>2</a></li>
+                                    <li class="selected active" date="3" style="display: block;"><p>T2</p><a>3</a></li>
+                                    <li class="" date="4" style="display: block;"><p>T3</p><a>4</a></li>
+                                    <li class="" date="5" style="display: block;"><p>T4</p><a>5</a></li>
+                                    <li class="" date="6" style="display: block;"><p>T5</p><a>6</a></li>
+                                    <li class="" date="7" style="display: block;"><p>T6</p><a>7</a></li>
+                                    <li class="" date="8" style="display: block;"><p>T7</p><a>8</a></li>
+                                    <li class="" date="9" style="display: block;"><p>CN</p><a>9</a></li>
+                                    <li class="" date="10" style="display: block;"><p>T2</p><a>10</a></li>
+                                    <li class="" date="11" style="display: block;"><p>T3</p><a>11</a></li>
+                                    <li class="" date="12" style="display: block;"><p>T4</p><a>12</a></li>
+                                    <li class="" date="13" style="display: block;"><p>T5</p><a>13</a></li>
+                                    <li class="" date="14" style="display: block;"><p>T6</p><a>14</a></li>
+                                    <li class="" date="15" style="display: block;"><p>T7</p><a>15</a></li>
+                                    <li class="" date="16" style="display: block;"><p>CN</p><a>16</a></li>
+                                    <li class="" date="17" style="display: block;"><p>T2</p><a>17</a></li>
+                                    <li class="" date="18" style="display: block;"><p>T3</p><a>18</a></li>
+                                    <li class="" date="19" style="display: block;"><p>T4</p><a>19</a></li>
+                                    <li class="" date="20" style="display: block;"><p>T5</p><a>20</a></li>
+                                    <li class="" date="21" style="display: block;"><p>T6</p><a>21</a></li>
+                                    <li class="" date="22" style="display: block;"><p>T7</p><a>22</a></li>
+                                    <li class="" date="23" style="display: block;"><p>CN</p><a>23</a></li>
+                                    <li class="" date="24" style="display: block;"><p>T2</p><a>24</a></li>
+                                    <li class="" date="25" style="display: block;"><p>T3</p><a>25</a></li>
+                                    <li class="" date="26" style="display: block;"><p>T4</p><a>26</a></li>
+                                    <li class="" date="27" style="display: block;"><p>T5</p><a>27</a></li>
+                                    <li class="" date="28" style="display: block;"><p>T6</p><a>28</a></li>
+                                    <li class="" date="29" style="display: block;"><p>T7</p><a>29</a></li>
+                                    <li class="" date="30" style="display: block;"><p>CN</p><a>30</a></li>
+                                    <li class="" date="31" style="display: none;"><p>T2</p><a>31</a></li>
+
+                                    <li class="otherdate" date="32" style="display: block;">
+                                        <button type="button" id="subtmitTestdriver" class="btn-style-01 pull-right" data-toggle="" data-target="" style="padding-left: 12px !important;">
+                                            <span>Đăng ký</span>
+                                        </button>
+                                        
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <script>
+                                function getDay(n) {
+                                    var d = new Date();
+
+                                    $('.schedule li').each(function () {
+
+                                        var curr_year = d.getFullYear();
+                                        var curr_month = n;
+                                        var curr_date = $(this).attr("date");
+
+                                        var datestr = curr_month + "/" + curr_date + "/" + curr_year;
+                                        var d_names = ["CN", "T2", "T3", "T4",
+                                        "T5", "T6", "T7"];
+
+                                        var myDate = new Date(datestr);
+                                        myDate.setDate(myDate.getDate() + 7);
+                                        var curr_day = myDate.getDay();
+
+                                        $(this).children("p").html(d_names[curr_day]);
+
+                                        var countDate = $(this).attr("date");
+                                        if (countDate > daysInMonth(n, 2016) & countDate != 32) {
+                                            $(this).css("display", "none");
+
+                                        } else {
+                                            $(this).css("display", "block");
+                                        }
+                                        
+                                    });
+                                    fnGetSchedule();
+                                }
+                                $(document).ready(function () {
+                                    var d = new Date();
+                                    var m = d.getMonth();
+                                    getDay(m + 1);
+                                });
+
+                                function daysInMonth(month, year) {
+                                    return new Date(year, month, 0).getDate();
+                                };
+
+                                $("#months").change(function () {
+
+                                    var n = $(this).val();
+                                    getDay(n);
+
+                                });
+
+                            </script>
+                            <p>
+                                <b>Chú ý:</b>  Để tham gia đăng ký lái thử với chúng tôi, Quý khách cần có giấy phép lái xe hạng B1 trở lên
+                            </p>
+                            
+                            <input class="r-input-data" type="hidden" id="description" name="description" value="Ngày :3/-1">
+                        </form>
+
+                        <div class="contact-info onmobile">
+                            <div class="support-info">
+
+                                <div class="wrapper">
+
+                                    <div class="box" style="">
+                                        <ul>
+                                            <li style="text-align: center">
+
+                                                <a class="btn-style-01 pull-right" href="tel:1900.545.591">Gọi điện để đăng kí <i class="fa fa-angle-right"></i>
+                                                </a>
+                                                <br>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <style>
+                            .onmobile {
+                                display: none;
+                            }
+
+                            @media screen and (max-width: 980px) {
+                                .onmobile {
+                                    display: block;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade homeModal" id="scheduleDetailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: -100px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="scheduleModalLabel" style="margin-left: -21px;color: #c41629;"><i class="fa fa-key"></i> Đăng ký lái thử SR <b id="sname"></b> </h4>
+            </div>
+            <div class="modal-body overhidden">
+                <form action="http://kiagovap.vn/">
+                    <div class="col-sm-12">
+                        <div class="note">
+                            <b style="color: #c41629;">Hotline:</b> <b style="color: #c41629;" id="scontact"></b> <br>
+                            <b>Địa chỉ:</b> <b id="saddress"></b> <a target="_blank" id="slinkmap" href="http://kiagovap.vn/">(bản đồ)</a>
+                        </div>
+                        <div class="overhidden personal-info" style="min-height: 140px">
+                            <b>Nội dung:</b> <div id="scontent" style=" padding: 12px 10px;background: #e4e4e4;color: #000; min-height: 100px;margin-top: 7px;"></div>
+                        </div>
+                        <div class="note">
+                            <strong>Chú ý:</strong> <span> Để tham gia đăng ký lái thử với chúng tôi, Quý khách cần có giấy phép lái xe hạng B1 trở lên.</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+   #scheduleDetailListModal table {
+         margin-bottom: 32px;
+   }
+    #scheduleDetailListModal th {
+        padding: 6px 4px;
+        background: #d44d48;
+        color: #fff;
+   }
+    #scheduleDetailListModal td {
+       padding: 4px;
+   }
+   #scheduleDetailListModal table, #scheduleDetailListModal th,  #scheduleDetailListModal td {
+        border: 1px solid #c41629;
+        border-collapse: collapse;
+    }
+</style>
+<div class="modal fade homeModal" id="scheduleDetailListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: -100px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" style="margin-left: -21px;color: #c41629;"><i class="fa fa-key"></i> Drive to Surprise - <b id="sdays"></b>  </h4>
+            </div>
+            <div class="modal-body overhidden">
+                <form action="http://kiagovap.vn/">
+                    <div class="col-sm-12">
+                        
+                        <table style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Showroom</th>
+                                    <th>Hotline</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Ghi chú</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end #test-driver-->
+<script>
+    // input: date
+    // output: list showroom & content
+    var fnGetSchedule = function () {
+        $.get("/Showroom/ScheduleBy?sId=" + -1 + "&month=" + $("#months").val(), function (ret) {
+            var data = ret.Data;
+            $.each(data, function (k, v) {
+                $('.schedule li[date="' + v.Days + '"]').find("p").append("<div id=" + v.Days + ">Đăng ký lái thử SR " + v.ShowroomName + "</div>");
+            });
+            $('.schedule li').each(function () {
+
+                $(this).children("p").find("div").bind("click", function () {
+                   
+                    var self = this;
+                    var listSchedules = [];
+                    $.each(data, function (k, v) {
+                        if (v.Days == self.id) {
+                            listSchedules.push(v);
+                            //
+                        }
+                    });
+                    if (listSchedules.length == 1) {
+                        $("#scontact").html(listSchedules[0].Hotline);
+                        $("#saddress").html(listSchedules[0].Address);
+                        $("#scontent").html(listSchedules[0].Notes);
+                        $("#sname").html(listSchedules[0].ShowroomName); $("#slinkmap").attr("href", listSchedules[0].LinkMap);
+                        $('#scheduleDetailModal').modal('show');
+                    }
+                    else {
+                        $('#scheduleDetailListModal').modal('show');
+                        $("#sdays").html(self.id  + "/" + $("#months").val() + "/" + new Date().getFullYear());
+                        var dataHtml = "";
+                        $.each(listSchedules, function (k, v) {
+                            dataHtml += "<tr><td>" + v.ShowroomName + "</td><td>" + v.Hotline + "</td><td>" + v.Address + " <a target='_blank' href='" + v.LinkMap + "'>(bản đồ)</a></td><td>" + v.Notes + "</td></tr>";
+                        });
+                        $('#scheduleDetailListModal').find("table tbody").html(dataHtml);
+                    }
+                });
+            });
+			$('#scheduleID').on('change', function () {
+        var scheduleID = this.value;
+        $.getJSON("home/getSchedule?scheduleID=" + this.value, function (data) {
+            var contentsp = data;
+            if (!$('.schedule ul li').hasClass("otherdate")) {
+                $('.schedule ul li ').removeClass("active");
+                $('.schedule ul li ').addClass("disabled");
+                $('.schedule ul li ').append('');
+            }
+            for (var i = 0; i < contentsp.length; i++) {
+
+                $('.schedule ul li ').each(function () {
+
+
+                    if (contentsp[i].indexOf(" " + $(this).attr("date") + "/" + scheduleID) > -1) {
+
+
+                        $(this).addClass("active");
+                        $(this).removeClass("disabled");
+                        $(this).append(' <div class="mytooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + contentsp[i] + ' </div> </div>');
+
+                    }
+
+                });
+
+            }
+        });
+
+    });
+
+			 $("li", $(".schedule")).on('click', function () {
+				$("li", $(".schedule")).removeClass('selected');
+				$("li", $(".schedule")).removeClass('active');
+				$(this).addClass('selected');
+				$(this).addClass("active");
+				$("#description").val("Ngày :" + $(this).attr("date") + "/" + $("#months").val());
+				;
+			});
+
+
+        });
+    };
+</script>
+<script>
+    $(document).ready(function () {
+        $('#provincetest').change(function () {
+            $('#districtstest option[value!="0"]').remove();
+
+            var val = $('option:selected', this).attr('data');
+            $.ajax({
+                type: "GET",
+                url: '/other/GetDistricts?provinceid=' + val,
+
+                success: function (response) {
+                    for (k = 0; k < response.length; k++)
+                        $("#districtstest").append("<option value='" + response[k]['Text'] + "'>" + response[k]['Text'] + "</option>");
+                }
+            });
+
+        });
+
+    });
+    function isValidEmailAddress(emailAddress) {
+        var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+        return pattern.test(emailAddress);
+    };
+    $('#subtmitTestdriver').click(function () {
+
+
+
+
+        var check = true;
+        if ($('#test-driver select').css('display') != 'none') {
+            if ($("#test-driver select option:selected").val() != '0') {
+
+            } else {
+                check = false;
+
+                alert("Bạn cần nhập đủ thông tin!");
+                return false;
+            }
+            var test = $("#test-driver #months select option:selected").val();
+            if ($("#test-driver #months select option:selected").val() != "-1") {
+
+            } else {
+                check = false;
+
+                alert("Bạn cần chọn tháng !");
+                return false;
+            }
+
+        }
+        if (!isValidEmailAddress($("#test-driver #email").val())) {
+            check = false;
+            alert("Bạn cần nhập đúng định dạng email !");
+            return false;
+
+        }
+
+        if (!$.isNumeric($("#test-driver #phone").val())) {
+            check = false;
+            alert("Bạn cần nhập đúng định dạng số điện thoại !");
+            return false;
+
+        }
+        debugger;
+        var test = $("#test-driver .schedule .active").length;
+        if ($("#test-driver .schedule .active").length < 1 || typeof test === "undefined") {
+            check = false;
+            alert("Bạn cần chọn ngày đăng kí !");
+            return false;
+
+        }
+        $('#test-driver :input:not(:button)').each(function (index, element) {
+            if (!$(element).hasClass("not-valid") && (element.value === '' || $(element).val() == '0')) {
+
+                //$("#testDriverModal .modal-body").text("Bạn cần nhập đầy đủ thông tin !");
+                alert("Bạn cần nhập đầy đủ thông tin !");
+                check = false;
+                return false;
+            }
+
+        });
+
+
+        if (check == true) {
+            $.ajax({
+                type: "POST",
+                url: '/other/AddTestDriver',
+                data: $('#frmtestdriver').serialize(),
+                success: function (response) {
+                    alert("Cảm ơn sự tin tưởng của quý khách với thương hiệu KIA, chúng tôi sẽ liên lạc với quý khách trong vòng 48 tiếng!");
+
+                    window.location = "http://kiagovap.vn";
+                    //$("#testDriverModal .modal-body").text(" Cám ơn sự tin tưởng của quý khách, chúng tôi sẽ liên lạc với quý khách trong vòng 48 tiếng để sắp xếp lịch sửa chữa chi tiết");
+                }
+            });
+        }
+
+    });
+</script>
+
+   
+<!--end #repair-u-car-->
+
+</html>

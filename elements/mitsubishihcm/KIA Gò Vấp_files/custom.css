@@ -1,0 +1,434 @@
+﻿#menu-page.row2 li > a > span {
+    max-width: 90px;
+}
+
+.kiamotorsub ul li {
+    float: left;
+    padding: 10px 20px;
+    min-width: 19%;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.intro-nav ul li a {
+    font-size: 15px;
+}
+
+#register-form-test {
+    margin-top: 5px;
+}
+
+
+.container {
+    max-width: 1090px;
+}
+
+.logo-menu-page {
+    margin: -15px 0px;
+    height: 68px;
+}
+
+#menu-page .main li a {
+    display: table;
+}
+
+#menu-page.row2 li > a > span {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro-box .sm-text {
+    margin: auto;
+    float: inherit;
+}
+
+.logo-menu-page img {
+    padding-top: 13px;
+}
+
+#top-intro-box .img-product {
+    width: 70%;
+}
+
+div#list-services img {
+    max-width: 300px;
+}
+
+#product-category li a {
+    text-transform: uppercase;
+}
+
+#customer-service .support-info .box > .title {
+    font-size: 16px;
+}
+
+#customer-service .support-info .box li label {
+    font-size: 15px;
+}
+
+#customer-service .support-info .box li span {
+    font-size: 15px;
+}
+
+#customer-service {
+    padding: 50px 0;
+}
+
+#main-slider .item .caption {
+    background: none !important;
+}
+
+.logo-menu-page {
+    background: none;
+}
+
+#price-list .item .price-list-vehicles {
+    background: none;
+}
+
+    #price-list .item .price-list-vehicles .container {
+        background: #eeeeee;
+    }
+
+#price-list .price-list-vehicles .intro {
+    margin: 20px;
+}
+
+#functions .bx-wrapper .thumb > img {
+    width: auto;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+i.fa.fa-angle-double-left {
+    padding-top: 35px;
+}
+
+#accessary .featured .item > .thumb {
+    max-width: 350px;
+}
+
+#parameters .style-table-01 {
+    max-width: 810px;
+}
+
+#back-link-360, #image360 {
+    float: right;
+}
+
+#menu-page .main li {
+    float: left;
+    padding: 0 15px;
+}
+
+.images-gallery .fancybox {
+    height: 158px;
+}
+
+
+
+#list-product-page .part h2 {
+    text-transform: uppercase;
+}
+
+.title-page.sp .container h1 {
+    /* top: 50px; */
+    height: 100%;
+    width: 340px;
+    /* overflow: hidden; */
+    height: 375px;
+    top: 0px !important;
+    vertical-align: middle;
+    /* text-align: center; */
+    display: table-cell;
+    padding: 40px;
+    background: rgba(255,255,255,0.5);
+}
+
+/*@media screen and (min-width: 992px) {
+    #main-slider .item .caption.middleRight {
+
+    top: 30%;
+
+}*/
+
+
+#price-list .price-list-vehicles .prices .item {
+    padding-left: 10px;
+}
+
+    #price-list .price-list-vehicles .prices .item > .name {
+        width: 200px;
+    }
+
+    #price-list .price-list-vehicles .prices .item:nth-child(odd) {
+        padding-right: 0px;
+    }
+
+#price-list .price-list-vehicles .prices .item {
+    padding-left: 20px;
+}
+
+    #price-list .price-list-vehicles .prices .item > .name {
+        width: 240px;
+    }
+
+#decade-slider a {
+    color: inherit;
+}
+
+#distribution-search form button {
+    width: 90px;
+    left: 225px;
+}
+
+
+#contact-page .contact-info {
+    min-width: 270px;
+    max-width: 300px;
+}
+
+#customer-service .support-info .box > .title {
+    font-size: 18px;
+}
+
+#customer-service .support-info .box li label {
+    font-size: 16px;
+}
+
+#customer-service .support-info .box li span {
+    font-size: 16px;
+}
+
+.showroom .wrapper address span {
+    font-size: 13px;
+}
+
+    .showroom .wrapper address span.cskh {
+        position: relative;
+    }
+
+.showroom .wrapper address .cskh-expand {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #bb162b;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+    .showroom .wrapper address .cskh-expand li {
+        width: 100%;
+        margin: 13px 0;
+        text-align: center;
+    }
+
+    .showroom .wrapper address .cskh-expand a {
+        color: #383838;
+        font-size: 18px;
+    }
+
+@media screen and (min-width: 1600px) {
+    #test-driver {
+        background-size: 100% 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .title-page.sp .container h1 {
+        display: none !important;
+    }
+
+
+    #for-customer .wrapper li a i {
+        display: none !important;
+    }
+
+    #menu-page.row2 li > a > span {
+        float: none !important;
+    }
+
+    .switch.round.off {
+        display: none !important;
+    }
+
+    .title-page.sp {
+        min-height: auto !important;
+    }
+}
+
+.breadcrumb ul > li i {
+    padding-right: 5px;
+}
+
+
+#top-intro-box .img-product {
+    right: -80px;
+}
+
+
+#price-list .price-list-vehicles .intro .btn-style-01 {
+    opacity: 1;
+}
+
+.slogan-text img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+.title-page img {
+    width: 100%;
+}
+
+.link-360 {
+    bottom: 0px;
+}
+
+
+
+@media screen and (min-width: 992px) {
+    #main-slider .item .caption.topRight {
+        bottom: 55%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #test-driver {
+        background-size: auto 100% !important;
+        background-position: left top !important;
+    }
+}
+
+#customer-service .support-info .box li label {
+    min-width: 68px;
+}
+
+#customer-service .support-info .box li a[type = 'tel'] {
+    color: #c4172c;
+    font-weight: bold;
+}
+
+#customer-service .btn-style-01 {
+    margin-right: 40px;
+    margin-top: -8px;
+}
+
+@media screen and (max-width: 767px) {
+    .attach-info {
+        max-height: 340px;
+        overflow: auto !important;
+    }
+}
+
+.otherdate .btn-style-01 {
+    min-width: 85px;
+    padding-left: 12px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+
+#customer-service .support-info .box li {
+    min-width: 320px;
+}
+
+#introduce {
+    padding: 10px 0;
+}
+
+#distribution #main-content {
+    padding-left: 0px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#main-content {
+    margin-top: 72px;
+    position: relative;
+}
+
+#list-news .list-news .item:nth-child(2n+1) {
+    clear: both;
+}
+
+
+.intro-nav ul li {
+    min-width: 24%;
+}
+
+.modal-dialog {
+    padding-top: 200px;
+}
+
+#repair-u-car .input-data-w {
+    min-width: 275px;
+}
+
+.testdrivepage .r-input-data {
+    min-width: 274px !important;
+}
+
+.testdrivepage .group .w50 {
+    min-width: 280px;
+    margin: 0px;
+}
+
+.testdrivepage #subtmitRepair {
+    margin: 20px;
+}
+
+#price-list .price-list-vehicles .info > div > p > img {
+    padding: 10px;
+}
+
+#price-list .item {
+    padding: 0px 40px;
+}
+
+@media screen and (max-width: 980px) {
+    #top-intro-box .img-product {
+        display: none;
+    }
+}
+
+.attach-info .nav-tabs > li:hover > a {
+    border-right: 2px solid transparent;
+}
+
+#menu-page.row2 li > a > span {
+    text-align: center;
+}
+
+#top-intro-box {
+    margin: 0px auto;
+    max-width: 1300px;
+}
+
+#parameters {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.conner {
+    background-color: transparent !important;
+}
+
+#main-nav .navbar-nav > li > a {
+    padding: 0 17px;
+}
+
+.detail-post table, tr, td {
+    margin: auto;
+}

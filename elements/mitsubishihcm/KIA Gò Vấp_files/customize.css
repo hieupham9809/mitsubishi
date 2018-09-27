@@ -1,0 +1,890 @@
+.nav-tabs li a{
+    border: none;
+}
+.nav-tabs{
+    border: none;
+}
+.nav-tabs.vertical li{
+    float: none;
+}
+.nav-tabs.reset-default > li.active > a, .nav-tabs.reset-default > li.active > a:hover, .nav-tabs.reset-default > li.active > a:focus{
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #list-services .item .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container{
+        max-width: 100% !important;
+    }
+    #main-nav .navbar-nav > li > a{
+        padding: 0 16px;
+    }
+}
+@media screen and (min-width: 992px) {
+
+    .kia-cop-history{
+        min-height: 630px;
+    }
+    #main-slider .bx-wrapper .bx-pager{
+        top: auto;
+        bottom: 30px;
+    }
+    #main-slider .item .thumb.lg-img{
+        height: auto;
+    }
+    #distribution-system{
+        background-size: 100% 100%;
+    }
+    #test-driver{
+        background-size: 100% 100%;
+    }
+    #showroom-special-info {
+        display: table;
+        width: 100%;
+    }
+    #showroom-special-info .part{
+        display: table-cell;
+        width: 50%;
+        vertical-align: top;
+    }
+    #estimated-price .calculator{
+        margin-left: 10px;
+    }
+    #decade-slider-h{
+        display: none;
+    }
+    .prize-list .item{
+        width: 25%;
+    }
+    .group  .w50{
+        width: 50%;
+        float: left;
+    }
+    .modal-dialog{
+        width: 960px;
+    }
+    #price-list .price-list-vehicles .prices .item{
+        float: left;
+        width: 50%;
+    }
+    #price-list .price-list-vehicles .prices .item:nth-child(even){
+        padding-left: 20px;
+    }
+    #price-list .price-list-vehicles .prices .item:nth-child(odd){
+        padding-right: 20px;
+    }
+    .list-products .item .btn-style-01{
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -ms-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+    .list-products .item:hover .btn-style-01{
+        opacity: 1;
+    }
+    #list-product-page .item{
+        cursor: pointer;
+    }
+    .relate-news .list-news .item{
+        width: 33.333333333%;
+    }
+    #menu-page .main > li:first-child a{
+        padding-left: 0;
+    }
+    #promotion .list-news .item, #list-news .list-news .item, .relate-news .list-news .item{
+        height: 177px;
+        width: 33.33333%;
+    }
+    .list-deals.list-news .item {
+        width: 33.3333%;
+        height: 180px;
+    }
+    #promotion .list-news .item .thumb, #list-news .list-news .item .thumb, .relate-news .list-news .item .thumb, .list-deals.list-news .item .thumb{
+        width: 100%;
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s ;
+        -ms-transition: width 0.5s ;
+        -o-transition: width 0.5s ;
+        transition: width 0.5s ;
+    }
+    #promotion .list-news .item:hover .thumb, #list-news .list-news .item:hover .thumb, .relate-news .list-news .item:hover .thumb, .list-deals.list-news .item:hover .thumb{
+        width: calc(100% + 30px);
+        width: -moz-calc(100% + 30px);
+        width: -webkit-calc(100% + 30px);
+        max-width: none;
+    }
+    #list-news .list-news .item a.title{
+        line-height: 20px;
+        height: 50px;
+        overflow: hidden;
+    }
+    .open > .dropdown-menu{
+        display: none;
+    }
+    #main-nav .navbar-nav > li > .dropdown-menu{
+        display: block !important;
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        /*-webkit-transition: max-height 0.5s;
+        -moz-transition: max-height 0.5s;
+        -ms-transition: max-height 0.5s;
+        -o-transition:  max-height 0.5s;
+        transition: max-height 0.5s;*/
+    }
+    #main-nav .navbar-nav > li:hover > .dropdown-menu{
+        z-index: 1;
+        max-height: 10000px;
+        opacity: 1;
+        top: 100%;
+    }
+    #parameters{
+        display: table;
+        width: 100%;
+    }
+    #parameters .nav-tabs{
+        display: table-cell;
+        float: none;
+    }
+    #parameters .tab-content{
+        display: table-cell;
+    }
+    #parameters .nav-tabs> li> a{
+        padding-left: 160px;
+    }
+    .np {
+        padding: 0;
+    }
+    .wSlider .item .thumb.lg-img{
+        height: auto;
+        display: block;
+    }
+    .wSlider .item .thumb.md-img, .wSlider .item .thumb.sm-img{
+        display: none;
+    }
+    #main-slider .item .caption.topLeft{
+        position: absolute;
+        left: 60px;
+        bottom: 50%;
+        bottom: 50%;
+        background: rgba(255,255,255,0.75);
+    }
+    #main-slider .item .caption.topRight{
+        position: absolute;
+        right: 60px;
+        bottom: 50%;
+        bottom: 50%);
+        background: rgba(255,255,255,0.75);
+    }
+    #main-slider .item .caption.middleRight{
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        background: rgba(255,255,255,0.75);
+    }
+    #main-slider .item .caption.middleLeft{
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        background: rgba(255,255,255,0.75);
+    }
+    #main-slider .item .caption.topRight .btn-style-01, #main-slider .item .caption.topRight .actions-link,
+    #main-slider .item .caption.bottomRight .btn-style-01, #main-slider .item .caption.bottomRight .actions-link,
+    #main-slider .item .caption.middleRight .btn-style-01, #main-slider .item .caption.middleRight .actions-link{
+        float: right;
+    }
+    #main-slider .item .caption.bottomLeft{
+        position: absolute;
+        left: 60px;
+        bottom: 50px;
+        background: rgba(255,255,255,0.75);
+    }
+    #main-slider .item .caption.bottomRight{
+        position: absolute;
+        right: 60px;
+        bottom: 60px;
+        background: rgba(255,255,255,0.75);
+    }
+
+    #products-character-slider .item .thumb.lg-img{
+        height: 615px !important;
+    }
+    .list-products .item:nth-child(4n +1){
+        clear: both;
+    }
+    #main-nav .navbar-nav > li > .dropdown-menu.attach-info .tab-content{
+        position: relative;
+        min-height: 360px;
+    }
+    #main-nav .navbar-nav > li > .dropdown-menu.attach-info .tab-content .tab-pane{
+        display: block !important;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        left: 0;
+        background: #FFFFFF;
+        height: 380px;
+        overflow: hidden;
+        padding: 20px;
+    }
+    #main-nav .navbar-nav > li > .dropdown-menu.attach-info .tab-content .tab-pane.active{
+        z-index: 1;
+    }
+    .attach-info .tab-content{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    .detail-post .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .detail-post .wrapper-content img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto !important;
+    }
+    #list-services .item .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #contact-page{
+        display: block;
+    }
+    #contact-page .contact-form{
+        padding: 20px 10px;
+        border-right: none;
+        border-bottom: 1px solid #e6e6e6;
+        display: block;
+    }
+    #contact-page .contact-info{
+        padding: 20px 10px;
+        display: block;
+    }
+    #main-slider .bx-wrapper img{
+        height: auto !important;
+    }
+    aside {
+        display: none;
+    }
+
+    #main-nav {
+        padding-left: 0;
+    }
+    footer {
+        padding-left: 0;
+    }
+    #main-content {
+        padding-left: 0;
+        overflow: hidden;
+    }
+    #showroom-special-info .part .part-content{
+        margin: 0 auto;
+    }
+    #decade-slider-h{
+        display: block;
+    }
+    #decade-slider{
+        display: none;
+    }
+    #repair-u-car{
+        display: none;
+    }
+    .kia-cop-intro .part .item .thumb{
+        float: none !important;
+        margin-bottom: 10px;
+    }
+    .kia-cop-intro .part.second .item{
+        float: none;
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #main-slider .bx-next, #main-slider .bx-prev{
+        display: none;
+    }
+    .prize-list .item{
+        width: 33.33333333%;
+    }
+    .list-products .item{
+        width: 33.3333%;
+    }
+    .list-products .item:nth-child(3n+1){
+        clear: left;
+    }
+    .relate-news .list-news .item{
+        width: 50%;
+    }
+    .container{
+        max-width: 100% !important;
+    }
+    #main-nav .navbar-collapse.collapse{
+        overflow: hidden;
+        float: left;
+        padding: 0;
+    }
+    #main-nav{
+        padding-left: 0;
+    }
+    #main-nav .container{
+        width: calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+
+    }
+    #main-nav .navbar-nav > li > a{
+        padding: 0 5px;
+        font-size: 15px;
+        font-family: Tahoma;
+    }
+    .wSlider .item .thumb.md-img{
+        height: 432px !important;
+        display: block;
+    }
+    /*.wSlider .item .thumb.lg-img, .wSlider .item .thumb.sm-img{
+        display: none;
+    }*/
+    #main-slider .bx-wrapper .bx-pager{
+        top: 390px;
+    }
+    .attach-info .nav-tabs{
+        float: none;
+    }
+    .attach-info .nav-tabs >li{
+        float: left;
+    }
+    .attach-info .nav-tabs > li.active > a, .attach-info .nav-tabs > li:hover > a, .attach-info .nav-tabs > li:focus > a{
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid #c4172c;
+    }
+}
+@media screen and (max-width: 767px)  {
+    #list-news .list-news .item{
+        width: 50%;
+        height: 188px;
+        overflow: hidden;
+    }
+    #contact-page .contact-form .group .r-input-data{
+        float: none;
+        width: 100%;
+        min-width: 280px;
+    }
+    aside {
+        display: none;
+    }
+
+    #main-nav {
+        padding-left: 0;
+    }
+
+    #main-content {
+        padding-left: 0;
+        overflow: hidden;
+    }
+
+    .products-slider .item{
+        margin-right: 30px !important;
+    }
+    #main-slider .bx-next, #main-slider .bx-prev{
+        display: none;
+    }
+    #price-list .price-list-vehicles .intro .btn-style-01{
+        clear: both;
+        float: none;
+    }
+    .showroom .title, .hot-new-showroom .title{
+        float: none;
+        background-image: none;
+        padding: 0 20px ;
+        font-size: 20px;
+    }
+    .showroom .wrapper address{
+        text-align: left;
+        padding-left: 20px;
+    }
+    #showroom-slider{
+        display: none;
+    }
+    .showroom .wrapper address > span{
+        display: block;
+        line-height: 30px;
+    }
+    .hot-new-showroom .wrapper{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .hot-new-showroom .wrapper a{
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .hot-new-showroom .wrapper .more{
+        display: none;
+    }
+    .history-list .item{
+        width: 100%;
+        float: none;
+    }
+    .why-kia .item, .why-kia .item.item-sizer{
+        width: 50%;
+    }
+    .why-kia .item.lg, .why-kia .item.md{
+        width: 100%;
+    }
+    .kia-cop-design .part .wrapper{
+        position: relative;
+        padding-bottom: 200px;
+        z-index: 2;
+    }
+    .kia-cop-design .part .thumb{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .prize-list .item{
+        width: 50%;
+    }
+    .foot-more span{
+        clear: both;
+        margin-top: 10px;
+        display: block;
+    }
+    .foot-more .btn-style-01{
+        margin-left: 0;
+    }
+    #price-list .list-products .item{
+        width: 100%;
+        padding: 10px;
+
+    }
+    .price-list-vehicles .actions-link{
+        clear: both;
+    }
+    #price-list .list-products .item .conner{
+        height: 0 !important;
+    }
+    #price-list .item .price-list-vehicles{
+        position: static;
+        width: 100% !important;
+    }
+    #price-list .price-list-vehicles .prices .item{
+        width: 100%;
+    }
+    #main-slider .bx-next, #main-slider .bx-prev{
+        display: none;
+    }
+    .list-deals.list-news .item{
+        width: 50%;
+    }
+    #products-function-slider .bx-next, #products-character-slider .bx-next,#products-function-slider .bx-prev, #products-character-slider .bx-prev{
+        display: none;
+    }
+    #menu-page .actions-link{
+        display: none;
+    }
+    #products-character-slider .caption {
+        display: none;
+    }
+    .attach-info{
+        display: none;
+    }
+    #menu-detail-product .actions-link{
+        display: none;
+    }
+    .link-360{
+        display: none;
+    }
+    #main-content {
+        overflow: hidden;
+    }
+    #register-form-test{
+        margin-top: 60px;
+    }
+    .pull-right {
+        float: none !important;
+    }
+    aside .sm-button {
+        display: block;
+    }
+    #main-slider .bx-wrapper .bx-pager{
+        top: 220px;
+    }
+    #main-nav .navbar-nav{
+        border-top: 2px solid #080808;
+        margin: 0 auto;
+    }
+    #main-nav .navbar-nav > li > a {
+        line-height: 40px;
+        border-bottom: 1px solid #d9d9d9;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #main-nav .navbar-form button {
+        line-height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #main-nav .navbar-form {
+        width: 100%;
+    }
+
+    #main-nav .navbar-form input {
+        opacity: 1;
+        position: static;
+        width: 100%;
+    }
+    .wSlider .item .thumb.sm-img{
+        height: 260px;
+        display: block;
+    }
+    .wSlider .item .thumb.md-img{
+        display: none;
+    }
+    .list-products .item{
+        width: 50%;
+    }
+    .list-products .item:nth-child(2n+1){
+        clear: both;
+    }
+    a.link-360{left: 20px;}
+}
+@media screen and (max-width: 639px) {
+    #copyright, #bottom-links{
+        padding: 0 10px;
+    }
+    #agency .agency-list{
+        position: static;
+        width: 100%;
+    }
+    #main-slider .bx-wrapper .caption{
+        display: none;
+    }
+    #main-slider .item .caption .part > h3{
+        float: none;
+        border: none;
+    }
+    #main-slider .item .caption button{
+        float: none;
+    }
+    #main-slider .item .caption .actions-link{
+        margin-left: 10px;
+    }
+    #menu-page.is-fixed{
+        display: none;
+    }
+
+    #list-services .item .thumb{
+        max-width: 40%;
+        margin-right: 10px;
+
+    }
+    #list-services .item .thumb img{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 480px)  {
+
+    #register-form-test .r-input-data, #repair-schedule .r-input-data, #scheduleModal select.r-input-data {
+        width: 49%;
+        width: calc(50% - 5px);
+        width: -moz-calc(50% - 5px);
+        width: -webkit-calc(50% - 5px);
+        float: left;
+    }
+    #register-form-test .r-input-data:nth-child(odd), #repair-schedule .r-input-data:nth-child(odd), #scheduleModal select.r-input-data.rm {
+        margin-right: 5px;
+    }
+
+    #register-form-test .r-input-data:nth-child(even), #repair-schedule .r-input-data:nth-child(even), #scheduleModal select.r-input-data.lm {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    #functions > .tab-menu{
+        position: static;
+    }
+    #functions > .tab-menu li{
+        float: left;
+        width: 50%;
+    }
+    #price-list .price-list-vehicles .prices .item{
+        padding: 0 !important;
+    }
+    #price-list .price-list-vehicles .prices {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    #price-list .price-list-vehicles .prices .item > .name{
+        width: 120px !important;
+    }
+    #list-services .item .thumb{
+        float: none;
+    }
+    #list-news .list-news .item{
+        width: 100%;
+        height: auto;
+    }
+
+    #decade-slider-h .item a{
+        color: #ffffff;
+    }
+    #explain{
+        padding: 0 !important;
+    }
+    .title-page{
+        min-height: 150px;
+    }
+    .title-page img{
+        max-width: none;
+        width: auto;
+    }
+    .title-page.sp .container h1{
+        padding: 15px 0 !important;
+        width: 100% !important;
+        font-size: 32px;
+    }
+    #functions .wSlider .bx-prev, #products-character-slider .bx-prev, #functions .wSlider .bx-next, #products-character-slider .bx-next{
+        width: 20px;
+        height: 40px;
+        background-size: 50%;
+    }
+    #functions .wSlider .caption{
+        width: 280px;
+        left: 40px;
+    }
+    .effect-light .switch{
+        left: 40px;
+    }
+
+    #customer-service .support-info .box{
+        width: 100% !important;
+    }
+    #accessary .wrapper-list .item{
+        width: 100%;
+    }
+    #accessary .featured .item > .wrapper{
+        clear: both;
+    }
+    #product-category ul{
+        display: block;
+    }
+    #product-category ul li{
+        float: left;
+        width: 33.333333%;
+    }
+    #product-category ul li a{
+        width: 100%;
+    }
+    #main-slider .bx-wrapper .bx-pager{
+        top: auto;
+        bottom: -20px;
+    }
+    .products-slider .item{
+        margin-right: 10px !important;
+    }
+    .attach-info .nav-tabs{
+        float: none;
+    }
+    .attach-info .nav-tabs > li{
+        float: none;
+    }
+    .attach-info .nav-tabs li> a{
+        width: 100%;
+    }
+    .attach-info .tab-content{
+        padding: 0;
+    }
+    .list-products .item .nother-links{
+        display: none;
+    }
+    .products-slider .bx-prev, .products-slider .bx-next{
+        display: none;
+    }
+    #customer-service .support-info > .title{
+        font-size: 36px;
+    }
+    .menu-bottom-box{
+        padding-left: 10px;
+    }
+    #menu-page.is-fixed .logo-menu-page{
+        display: none;
+    }
+    #menu-page.is-fixed{
+        display: none;
+    }
+    .modal-title i{
+        display: none;
+    }
+    #showroom-special-info .accessary{
+        background-image: none;
+    }
+    .title-page.sp.mt-40 .container h1{
+        top: 15px;
+    }
+    #menu-page .main li{
+        float: none;
+        overflow: hidden;
+        padding: 2px 20px;
+    }
+    #menu-page .main li{
+        width: 50%;
+    }
+    #menu-page .main li i{
+        display: none;
+    }
+    #top-intro-box{
+        min-height: 300px;
+    }
+    .prize-list .item{
+        width: 100%;
+    }
+    #general-news{
+        padding: 40px 0;
+    }
+    #general-news .part{
+        float: none;
+        width: 100%;
+    }
+    .attach-info .nav-tabs > li> a{
+        min-width: 0;
+    }
+    .title-page.sp .container h1{
+        top: 15px;
+    }
+    .list-deals.list-news .item{
+        width: 100%;
+    }
+    footer{
+        padding-bottom: 65px;
+    }
+    #top-intro-box .img-product img{
+        width: 200px;
+    }
+    .list-products .item{
+        width: 100%;
+    }
+    #top-intro-box .img-product{
+        position: static;
+    }
+    #main-nav .list-products .item:nth-child(2n+1){
+        clear: both;
+    }
+    footer {
+        padding-left: 0;
+    }
+
+    .r-input-data {
+        width: 100%;
+    }
+
+    #register-form-test {
+        padding: 0 20px;
+    }
+
+    #product-category li {
+        float: none;
+    }
+
+    #distribution-search {
+        padding: 30px 15px;
+    }
+
+    #distribution-search > .title {
+        font-size: 30px;
+    }
+
+    #move-phone img {
+        width: 200px;
+    }
+
+    #promotion .list-news .item {
+        float: none;
+        width: auto;
+    }
+
+    #main-slider .item .thumb {
+        height: auto !important;
+    }
+
+    #repair-u-car {
+        min-height: 450px;
+        padding-top: 50px;
+    }
+
+}
+@media screen and (min-width: 1380px) {
+    #test-driver{
+        background-size: 100% auto;
+    }
+    #distribution-system {
+        background-size: 100% auto;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #move-car {
+        bottom: 66px;
+        left: 150px;
+    }
+    #test-driver{
+        background-size: 100% 100%;
+    }
+}
+@media screen and (min-width: 2000px){
+    body{
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        -webkit-box-shadow: 0 0 25px 16px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0 0 25px 16px rgba(0,0,0,0.1);
+         box-shadow: 0 0 25px 16px rgba(0,0,0,0.1);
+    }
+    aside{
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        position: absolute;
+        padding-top: 0;
+        border-right: 1px solid #dee3ea;
+        box-shadow: none;
+    }
+}
+.bx-prev, .bx-next {
+    margin-top: 15px;
+}
+@media screen and (max-width: 767px) {
+
+    #image360 {
+        max-width: 120%;
+        zoom: 0.8;
+   }
+    .link-360 {
+        display:block;
+    }
+    .list-news .item .thumb {
+        height: 112px;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    .list-news .item .thumb {
+        height: 112px;
+    }
+}

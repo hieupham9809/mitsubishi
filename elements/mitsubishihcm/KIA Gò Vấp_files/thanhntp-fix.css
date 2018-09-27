@@ -1,0 +1,405 @@
+@media screen and (max-width: 1300px) {
+    .showroom .wrapper address span i {
+        display: none;
+    }
+}
+
+.slogan-text img {
+    width: 100%;
+    max-width: 320px !important;
+}
+
+#main-content {
+    overflow: hidden;
+}
+
+#for-customer .title {
+    text-transform: uppercase;
+}
+
+#menu-page.row2 li > a > span {
+    max-width: 108px;
+}
+
+.showroom {
+    height: auto !important;
+}
+
+.showroom .title {
+    padding-left: 20px ;
+
+}
+
+#price-list .price-list-vehicles .intro {
+    margin: 20px 9px;
+}
+
+#price-list .price-list-vehicles .info > div > p > img {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+}
+
+.price-list-vehicles .actions-link li .fa-key {
+    height: 30px;
+    width: 100%;
+}
+
+.price-list-vehicles .actions-link li {
+    height: 30px;
+}
+
+#contact-page .support-info .box ul.hotline-u {
+ 
+    display:inline-block;
+       display: none;
+    color: #ffffff !important;
+    padding: 8px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #bb162b;
+    position: relative;
+    line-height: 1.2rem;
+    min-width: 22px;
+    overflow: hidden;
+}
+
+#contact-page .support-info .box ul.hotline-u li label {
+    float: left;
+}
+
+#contact-page .support-info .box ul.hotline-u:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    background: #ef3e54;
+    left: 90px;
+}
+
+.hotline-s a {
+    display: inline-block;
+    padding: 10px 20px 10px 60px;
+    background-image: url("images/call_white.png");
+    background-color: #bb162b;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 30px auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    min-width: 222px;
+}
+
+.hotline-s a span {
+    color: #ffffff !important;
+    font-size: 22px;
+}
+
+#contact-page .support-info .box ul.hotline-u a {
+    padding-left: 15px;
+    float: left;
+}
+
+.contact-info .support-info .box ul.hotline-u span {
+    color: #ffffff;
+}
+
+.list-news .item a.title {
+    line-height: 18px;
+    height: 46px;
+    overflow: hidden;
+}
+
+#for-customer .wrapper li {
+    vertical-align: top;
+}
+
+#frmtestdriver > p {
+    margin-top: 10px;
+}
+#move-phone{
+    top: 0;
+    right: 0;
+    bottom: 0 !important;
+    min-width: 320px;
+}
+#move-phone img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+    #functions > .tab-menu{
+        display: table;
+    }
+    #functions > .tab-menu >li{
+        display: table-cell;
+    }
+    #map {
+        display: none;
+    }
+
+    #test-driver {
+        padding-top: 30px;
+    }
+
+    #products .title > a, #register-form-test > .title {
+        font-size: 32px;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 8px;
+        height: 8px;
+    }
+
+    #promotion div.title {
+        font-size: 28px;
+    }
+
+    .title-page {
+        height: auto;
+        min-height: 0;
+    }
+
+    #top-intro-box .img-product {
+        width: 100%;
+        right: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    #top-intro-box .img-product img {
+        width: 100%;
+    }
+
+    #menu-page {
+        padding: 10px;
+    }
+
+    #menu-page .main li a {
+        line-height: 28px;
+    }
+
+    .detail-post .title-post {
+        font-size: 24px;
+    }
+    #main-image-introduce{
+        width: 100%;
+        text-align: center;
+    }
+    #parameters .nav-tabs > li:first-child{
+        line-height: 40px;
+        font-size: 21px;
+    }
+    #functions .wSlider .bx-wrapper .bx-pager{
+        display: none;
+    }
+    #functions .bx-wrapper .thumb{
+        position: relative;
+        height: 280px;
+        width: 100%;
+    }
+    #functions .bx-wrapper .thumb > img{
+        position: absolute;
+        max-width: 650px;
+        right: 0;
+        top: 0;
+    }
+    #functions .wSlider .caption .md-text{
+        font-size: 24px;
+    }
+    #functions .wSlider .caption{
+        position: relative;
+        width: auto;
+        height: auto;
+        top: auto;
+        left: auto;
+        padding: 20px;
+    }
+    #functions .wSlider .cover{
+        display: none;
+    }
+    #customer-service .support-info .btn-style-05{
+        margin-bottom: 15px;
+    }
+    #customer-service #title-page{
+        margin-bottom: 20px !important;
+    }
+    .cskh span.di-table-cell.text{
+        line-height: 1.2em;
+    }
+    #menu-page{
+        display: none;
+    }
+    #price-list .item > .wrapper{
+        padding-bottom: 0;
+    }
+    #price-list .item .price-list-vehicles{
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    #parameters .nav-tabs{
+        width: 200px;
+        float: left;
+    }
+    #parameters .tab-content{
+        overflow: hidden;
+    }
+}
+
+#contact-page .contact-form .group .r-input-data {
+    padding: 10px 15px;
+}
+
+.contact-info .support-info .box{
+    margin-bottom: 20px;
+}
+.contact-info .support-info .box >.title{
+    margin-bottom: 5px;
+}
+.effect-on-detail .bx-wrapper{
+    min-width: 0;
+    background-color: #000000;
+}
+#promotion div.title{
+    font-size: 35px;
+}
+.title-page{
+    overflow: hidden;
+}
+#agency .agency-list{
+    z-index: 99 !important;
+}
+.hot-new-showroom .wrapper, .showroom .title{
+    line-height: 40px;
+}
+.cskh{
+    padding-left: 3px !important;
+    text-transform: none;
+}
+.cskh.gray{
+    background-color: #717e91;
+}
+.cskh span.di-table-cell.text{
+    font-size: 18px;
+}
+#customer-service .support-info .box{
+    margin-bottom: 10px;
+    width: auto;
+    margin-right: 35px;
+}
+#customer-service .support-info .box .title{
+    margin-bottom: 5px;
+}
+#customer-service .support-info .btn-style-05{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: block;
+}
+#customer-service .support-info .box li{
+    width: auto;
+    min-width: 0;
+}
+#main-nav{
+    z-index: 10000;
+}
+body> .conner{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.5);
+}
+.openmenu > .conner{
+    display: block;
+}
+.showroom .wrapper address{
+    height: 40px;
+}
+#price-list .price-list-vehicles .intro.row{
+    margin: 0 -15px;
+}
+#menu-page .actions-link li{
+    line-height: inherit;
+    padding: 20px 8px;
+}
+#menu-page .actions-link li a i.fa-key{
+    width: 100%;
+    background: url("images/steering-wheel-24-gray.png") no-repeat center;
+}
+.fancybox-opened{
+    max-width: 650px;
+    height: auto !important;
+}
+.fancybox-inner{
+    max-width: 100%;
+    height: auto !important;
+}
+.container{
+    max-width: none;
+}
+#accessary .wrapper-list .item:nth-child(2n+1){
+    clear: both;
+}
+.list-products .item:hover .btn-style-01{
+    opacity: 1;
+}
+.on-mobile{
+    display: none;
+}
+.on-mobile.showroom .title{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #c4172c;
+    padding: 0 15px;
+}
+.on-mobile.showroom .wrapper{
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.on-mobile.showroom.open .wrapper{
+    max-height: 400px;
+}
+
+@media screen and (max-width: 767px){
+    .on-mobile{
+        display: block;
+    }
+    .on-desktop{
+        display: none;
+    }
+    #list-services .item a.title{
+        font-size: 24px;
+    }
+    #list-services .item{
+        padding: 25px 0;
+    }
+    #accessary .wrapper-list > .title{
+        padding: 0 10px;
+    }
+    #qnas .nav-tabs > li > a{
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
